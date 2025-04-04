@@ -12,17 +12,25 @@ ScanPro is a Python-based GUI application that monitors your Downloads folder fo
 - watchdog
 
 ## Installation
-1. Clone repository:
-   '''bash
-git clone https://github.com/your-szizzo522/ScanPro.git
-2. Install dependencies:
-   ```bash
-pip install -r requirements.txt
+### 1. Download the Executable
+1. Go to the [Releases](https://github.com/szizzo522/ScanPro/releases) page of this repository.
+2. Download the latest version of the executable:
+   - On **Windows**, download `ScanPro.exe`.
+   - On **macOS**, download `ScanPro.app`.
 
-## Usage
-- Run the script:
-   ```bash
-python3 Scanpro.py
+### 2. Run the Application
+#### On Windows:
+1. Locate the downloaded `ScanPro.exe` file.
+2. Double-click the `ScanPro.exe` file to launch the application.
+
+#### On macOS:
+1. Locate the downloaded `ScanPro.app` file.
+2. Double-click the `ScanPro.app` file to launch the application.
+3. If you see a security warning, go to **System Preferences > Security & Privacy > General** and click **Open Anyway**.
+
+No additional setup is required on either platform.
+
+---
 
 ## License
 Copyright (c) 2025 Samuel Zizzo
