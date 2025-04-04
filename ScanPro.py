@@ -81,8 +81,8 @@ icon_path = os.path.join("assets", "fire_file_icon.png")
 try:
     icon = tk.PhotoImage(file=icon_path)
     window.iconphoto(True, icon)
-except Exception as e:
-    print(f"Error loading icon: {e}")
+except Exception:
+    pass  # Simplified: Removed unnecessary error message for icon loading
 
 title_frame = tk.Frame(window, bg="#f0f0f0")
 title_frame.pack(anchor="n", pady=10)
@@ -100,8 +100,8 @@ try:
     )
     title_label.image = small_icon
     title_label.pack()
-except Exception as e:
-    print(f"Error loading small icon for title: {e}")
+except Exception:
+    pass  # Simplified: Removed unnecessary error message for small icon loading
 
 top_frame = tk.Frame(window)
 top_frame.pack(anchor="nw", padx=10, pady=10, fill="x")
