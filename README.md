@@ -26,8 +26,6 @@ ScanPro is a Python-based GUI application that monitors your Downloads folder fo
    python Scanpro.py
 
 ## License
-MIT License
-
 Copyright (c) 2025 Samuel Zizzo
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
