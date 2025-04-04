@@ -1,3 +1,0 @@
-([('ScanPro',
-   '/Users/samuelzizzo/Documents/Project 1/dist/ScanPro',
-   'EXECUTABLE')],)
