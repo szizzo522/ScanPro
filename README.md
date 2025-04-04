@@ -1,4 +1,4 @@
-# ScanPro File Scanner:python
+# ScanPro File Scanner:
 ScanPro is a Python-based GUI application that monitors your Downloads folder for new files and scans them for potential risks. Watchdog is a Python library that monitors file system events. It allows programs to detect when files and directories are created, modified, moved, or deleted. The app compares the file’s extension (for example, .exe, .js, .bat) against a list of extensions known to be associated with executable or potentially dangerous files. If it finds a match, it flags the file as high risk. It also uses Python’s mimetypes module to guess the file’s type. While this doesn’t tell you everything about the file’s content, it helps verify if the file’s nature (like being an application or script) aligns with its extension. Based on these checks, the app then outputs a risk level (“HIGH” for risky extensions, “LOW” otherwise) along with a recommendation on whether it’s safe to open the file.
 
 ## Features:
