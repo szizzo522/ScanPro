@@ -34,7 +34,7 @@ If you want to run ScanPro directly from the Python source code:
 ```bash
 xattr -rd com.apple.quarantine ~/Downloads/ScanPro\ 2.app
 chmod +x ~/Downloads/ScanPro\ 2.app/Contents/MacOS/*
-
+'''
 **Then**, right-click the app and choose **Open** again. This bypasses macOS Gatekeeper restrictions for new/unverified apps.
 
 **No additional setup is required on either platform.**
