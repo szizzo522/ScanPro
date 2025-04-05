@@ -7,9 +7,11 @@ ScanPro is a Python-based GUI application that monitors your Downloads folder fo
 - Allows manual file scanning.
 - Displays results in a user-friendly GUI.
 
-## Requirements:
-- python version 3.8 or later
-- watchdog
+## Requirements (for Developers / Running from Source)
+If you want to run ScanPro directly from the Python source code:
+
+- Python 3.8 or later
+- watchdog (`pip install watchdog`)
 
 ## Installation
 ### 1. Download the Executable
@@ -27,33 +29,19 @@ ScanPro is a Python-based GUI application that monitors your Downloads folder fo
 1. Locate the downloaded `ScanPro.app` file.
 2. Double-click the `ScanPro.app` file to launch the application.
 3. If you see a security warning, go to **System Preferences > Security & Privacy > General** and click **Open Anyway**.
+4. If you see an error like **“The application can’t be opened”**, run the following in Terminal to fix it:
 
-No additional setup is required on either platform.
+```bash
+xattr -rd com.apple.quarantine ~/Downloads/ScanPro\ 2.app
+chmod +x ~/Downloads/ScanPro\ 2.app/Contents/MacOS/*
 
----
+**Then**, right-click the app and choose **Open** again. This bypasses macOS Gatekeeper restrictions for new/unverified apps.
+
+**No additional setup is required on either platform.**
 
 ## License
-Copyright (c) 2025 Samuel Zizzo
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-This license applies to the ScanPro project.
+This project is licensed under the MIT License. See the [LICENSE](./LICENCE) file for details.
 
 ## Comments
 ***This was created using python version 3.12.2***
