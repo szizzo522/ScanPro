@@ -16,3 +16,8 @@ venv/
 # temp-files
 *.log
 *.tmp
+
+# Ignore build artifacts
+build/
+dist/
+*.spec
